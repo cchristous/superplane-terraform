@@ -28,7 +28,7 @@ resource "kubernetes_secret" "db_credentials" {
     DB_NAME         = var.db_name
     DB_USERNAME     = "postgres"
     DB_PASSWORD     = local.db_password
-    POSTGRES_DB_SSL = "false"
+    POSTGRES_DB_SSL = "true"
   }
 }
 
